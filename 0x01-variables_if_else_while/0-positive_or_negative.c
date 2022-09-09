@@ -1,20 +1,17 @@
-/*
- * this is a program that solves simple calculations
- *
- */
-
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <studio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/* 
+ * more headers goes there
+ *
+ *  betty style doc for function main goes there 
+ */
 int main(void)
 {
 		int n;
 		
-		rand(time(0));
+		srand(time(0));
 		n = rand() - RAND_MAX / 2;
 					
 		if (n > 0)
