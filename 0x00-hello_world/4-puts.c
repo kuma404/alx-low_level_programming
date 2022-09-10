@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-*main - starting point
+*main - Entry point
 *
 *Reaturn: Always 0 (Success)
 */
