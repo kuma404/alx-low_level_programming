@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*Main - Produce the exact same output
+*Main - Starting point
 *
 *Return: Alway 0 (Success)
 *
