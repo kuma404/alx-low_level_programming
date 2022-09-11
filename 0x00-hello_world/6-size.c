@@ -9,13 +9,14 @@ int main(void)
 {
 	char hire = 0;
 	int dog = 0;
-	long int pig = 0;
+	long int pig = 0:
+	long long int snake = 0;
 	float cat = 0;
 
-		printf("Size of char: %ld byte(s)\n", sizeof(char));
-			printf("Size of int: %ld byte(s)\n", sizeof(int));
-				printf("Size of long int: %ld byte(s)\n", sizeof(long int));
-					printf("Size of long long int: %ld byte(s)\n", sizeof(long long int));
-						printf("Size of float: %ld byte(s)\n", sizeof(float));
+		printf("Size of char: %ld byte(s)\n", sizeof(hire));
+			printf("Size of int: %ld byte(s)\n", sizeof(dog));
+				printf("Size of long int: %ld byte(s)\n", sizeof(pig));
+					printf("Size of long long int: %ld byte(s)\n", sizeof(snake));
+						printf("Size of float: %ld byte(s)\n", sizeof(cat));
 							return (0);
 }
