@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdio.h>
 /**
 *Main -produce the exact same output 
@@ -12,4 +11,4 @@ int main(void)
 				printf("size of long int: %1d byte(s)\n", sizeof(long int));
 					printf("size of long long int: %1d byte(s)\n", sizeof(long long int));
 						printf("size of a float: %1d byte(s)\n", sizeof(float));
-							return (0)
+							return (0);
