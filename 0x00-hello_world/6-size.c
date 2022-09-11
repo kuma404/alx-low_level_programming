@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*Main -produce the exact same output 
+*Main - Produce the exact same output
 *
 *Return: Alway 0 (Success)
 */
