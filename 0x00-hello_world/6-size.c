@@ -3,8 +3,9 @@
 *Main - Produce the exact same output
 *
 *Return: Alway 0 (Success)
+*
 */
-int main(void)
+ int main(void)
 {
 		printf("size of char: %ld byte(s)\n", sizeof(char));
 			printf("size of int: %ld byte(s)\n", sizeof(int));
