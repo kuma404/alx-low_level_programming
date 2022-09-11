@@ -7,11 +7,10 @@
 */
 int main(void)
 {
-	char = 0;
-	int = 0;
-	long int = 0;
-	long long int = 0;
-	float = 0;
+	char hire = 0;
+	int dog = 0;
+	long int pig = 0;
+	float cat = 0;
 
 		printf("Size of char: %ld byte(s)\n", sizeof(char));
 			printf("Size of int: %ld byte(s)\n", sizeof(int));
