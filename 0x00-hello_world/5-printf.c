@@ -1,5 +1,4 @@
-#!/bin/bash
-#include <sudio.h>
+#include<sudio.h>
 /**
  *main -Starting
  *
