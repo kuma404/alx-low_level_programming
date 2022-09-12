@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int c,, i, k;
+	int c, i, k;
 
 	for (c = '0'; c <= '9'; c++)
 	{
@@ -30,6 +30,7 @@ int main(void)
 				}
 			}
 		}
+	}	
 		putchar('\n');
 
 		return (0);
