@@ -9,7 +9,7 @@
 *Return: pointer to @dest
 */
 
-char*_streat(char*dest, char *src)
+char*_streat(char *dest, char *src)
 {
 
 	int index = 0, dest_lens = 0;
