@@ -20,12 +20,12 @@ char *leet(char *str)
 }
 
 /**
- * *
+ *
  * transform - helper function to map letter with it's leet encoding
  * @x; char to be encoded
- *
  * Return: the encoded char
  */
+
 char transform(char x)
 {
 	char mapping_low[8] = {'o', 'l', '\0', 'e', 'a', '\0', '\0', 't'};
@@ -37,7 +37,7 @@ char transform(char x)
 	{
 		if (x == mapping_low[i] || x == mapping_upper[i])
 		{
-			replacement = i + 'e';
+			replacement = i + '0';
 			break;
 		}
 		i++;
