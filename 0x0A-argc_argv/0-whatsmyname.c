@@ -1,20 +1,14 @@
-cat > 0-whatsmyname.c
-
-#include <stdio.h>                                                                                                                   
-#include "main.h"                                                                                                                    
-                                                                                                                                     
-/**                                                                                                                                  
- *main - Print the name of the program                                                                                              
- *@argc: Count arguments                                                                                                            
- *@argv: Arguments                                                                                                                  
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - print the name of the executable
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
-
-int main(int argc, char *argv[])                                                                                                     
-{                                                                                                                                    
-(void) argc;                                                                                                                         
-printf("%s\n", argv[0]);                                                                                                             
-                                                                                                                                     
-return (0);                                                                                                                          
+int main(int argc __attribute__((unused)), char **argv)
+{
+	printf("%s\n", *argv);
+	return (0);
 }
