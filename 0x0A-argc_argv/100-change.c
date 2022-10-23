@@ -1,105 +1,44 @@
-
-Go to file
 #include <stdio.h>
-
 #include <stdlib.h>
-
-
-
 /**
-
-* main - entry point
-
-*
-
-* @argc: integer, length of @argv
-
-*
-
-* @argv: one-dimensional array of strings, arguments of this program
-
-*
-
-* Return: 0, success
-
-*/
-
-
-
-int main(int argc, char *argv[])
-
+ * main - returns the min numbers of coins per given ammount of money.
+ * @argc: argument count or size of arguments.
+ * @argv: argument vector
+ *
+ * Return: 0 success 1 failure.
+ */
+int main(int argc, char **argv)
 {
+	int coins, i, ammount;
+	int value[5] = {25, 10, 5, 2, 1};
 
-	int result, amount, cent;
-
-
+	coins = 0;
+	ammount = atoi(argv[argc - 1]);
 
 	if (argc != 2)
-
 	{
-
 		printf("Error\n");
-
 		return (1);
-
 	}
-
-
-
-	result = 0;
-
-	amount  = atoi(argv[1]);
-
-
-
-	if (amount < 0)
-
+	else if (ammount <= 0)
 	{
-
 		printf("0\n");
-
-		return (0);
-
 	}
-
-
-
-	while (amount)
-
+	else
 	{
-
-		if (amount >= 25)
-
-			cent = 25;
-
-		else if (amount >= 10)
-
-			cent = 10;
-
-		else if (amount >= 5)
-
-			cent = 5;
-
-		else if (amount >= 2)
-
-			cent = 2;
-
-		else
-
-			cent = 1;
-
-
-
-		result += amount / cent;
-
-		amount %= cent;
-
+		for (i = 0; i < 5; i++)
+		{
+			if (value[i] <= ammount)
+			{
+				coins = coins + (ammount / value[i]);
+				ammount = ammount - (ammount / value[i]) * value[i];
+				if (ammount == 0)
+				{
+					printf("%d\n", coins);
+					break;
+				}
+			}
+		}
 	}
-
-
-
-	printf("%d\n", result);
-
 	return (0);
-
 }
