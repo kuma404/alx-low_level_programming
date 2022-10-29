@@ -1,22 +1,39 @@
 #include <stdio.h>
-/**
-*main - Starting point
-*
-*Return: Alway 0 (Success)
-*
-*/
-int main(void)
-{
-	char hire = 0;
-	int dog = 0;
-	long int pig = 0;
-	long long int snail = 0;
-	float cat = 0;
 
-		printf("Size of char: %ld byte(s)\n", sizeof(hire));
-			printf("Size of int: %ld byte(s)\n", sizeof(dog));
-				printf("Size of long int: %ld byte(s)\n", sizeof(pig));
-					printf("Size of long long int: %ld byte(s)\n", sizeof(snail));
-						printf("Size of float: %ld byte(s)\n", sizeof(cat));
-							return (0);
+/**
+
+*main - entry point
+
+*Return: 0 on success
+
+*/
+
+int main(void)
+
+{
+
+char a;
+
+int b;
+
+long c;
+
+long int d;
+
+float e;
+
+printf("Size of a char: %u byte(s)\n", (unsigned int)sizeof(a));
+
+printf("Size of an int: %u byte(s)\n", (unsigned int)sizeof(b));
+
+printf("Size of a long int: %u byte(s)\n", (unsigned int)sizeof(c));
+
+printf("Size of a long long int: %u byte(s)\n",
+
+(unsigned int)sizeof(long long));
+
+printf("Size of a float: %u byte(s)\n", (unsigned int)sizeof(e));
+
+return (0);
+
 }
